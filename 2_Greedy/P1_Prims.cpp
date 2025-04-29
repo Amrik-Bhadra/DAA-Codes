@@ -19,7 +19,6 @@ int mst(int v, int e, vector<vector<pair<int, int>>>& adj){
 
         visited[node] = 1;
         cost += weight;
-        cout << "Cost: " << cost << endl;
 
         for(auto it: adj[node]){
             int adjNode = it.first;
